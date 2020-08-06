@@ -1,0 +1,34 @@
+{
+  "name": "mini-test",
+  "version": "1.0.0",
+  "description": "",
+  "private": true,
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "webpack-dev-server --open --hot"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/qingchiapp/mini-test.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/qingchiapp/mini-test/issues"
+  },
+  "homepage": "https://github.com/qingchiapp/mini-test#readme",
+  "devDependencies": {
+    "clean-webpack-plugin": "^3.0.0",
+    "html-webpack-plugin": "^4.3.0",
+    "webpack": "^4.44.1",
+    "webpack-cli": "^3.3.12",
+    "webpack-dev-server": "^3.11.0",
+    "worker-loader": "^3.0.0"
+  },
+  "dependencies": {
+    "lodash": "^4.17.19",
+    "vue": "^2.6.11"
+  }
+}
