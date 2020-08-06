@@ -10,6 +10,19 @@ module.exports = {
   devServer: {
     contentBase: './dist'
   },
+  resolve: {
+    alias: {
+      'vue$': 'vue/dist/vue.esm.js' // 用 webpack 1 时需用 'vue/dist/vue.common.js'
+    }
+  },
+  module: {
+    rules: [
+      {
+        test: /\.worker\.js$/,
+        use: {loader: 'worker-loader'}
+      }
+    ]
+  },
   plugins: [
     new CleanWebpackPlugin(),
     new HtmlWebpackPlugin({
